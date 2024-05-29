@@ -77,6 +77,15 @@ const LoginSignup = () => {
                     <p>By continuing, I agree to the terms of use & privacy policy</p>
                 </div>
 
+<div className='aboutlinks'>
+ <ul className='links'>
+            <li>Company</li>
+            <li>Products</li>
+            <li>Offices</li>
+            <li>About</li>
+            <li>Contact</li></ul></div>
+
+
             </div>
             
         </div>

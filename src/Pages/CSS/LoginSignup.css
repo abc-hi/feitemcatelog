@@ -58,6 +58,29 @@
     color:#ff4141;
     font-weight: 600;
 }
+.aboutlinks {
+    /* Optional: Style for the container */
+    padding: 10px;
+  }
+  
+  .links {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .links li {
+    margin-right: 20px; /* Add spacing between items */
+  }
+  
+  /* Optional: Remove the right margin for the last item */
+  .links li:last-child {
+    margin-right: 0;
+  }
+  
+
+
 .loginsignup-agree{
     display:flex;
     align-items: center;
