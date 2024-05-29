@@ -30,6 +30,8 @@
 }
 .footer-links li{
     cursor:pointer;
+    margin-bottom: 100px;
+
 }
 .footer-social-icon{
     display:flex;
