@@ -8,10 +8,10 @@ import pintester_icon from '../Assets/pintester_icon.png';
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className='footer-logo'>
+           {/* <div className='footer-logo'>
                 <img src={footer_logo} alt="" />
                 <p>SHOPPER</p>
-            </div>
+            </div> */}
             <ul className='footer-links'>
             <li>Company</li>
             <li>Products</li>
