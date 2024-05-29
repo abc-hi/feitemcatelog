@@ -17,7 +17,9 @@ const LoginSignup = () => {
     const login = async ()=>{
         console.log("Login function executed",formData);
         let responseData;
-        await fetch('http://localhost:4000/login',{
+        // await fetch('http://localhost:4000/login',{
+            await fetch('https://itemcatalogpjtbe.onrender.com/login',{
+
          method:'POST',
          headers:{
             Accept:'application/form-data',
@@ -38,7 +40,9 @@ const LoginSignup = () => {
     const signup = async ()=>{
         console.log("Signup function executed",formData);
         let responseData;
-        await fetch('http://localhost:4000/signup',{
+        // await fetch('http://localhost:4000/signup',{
+            await fetch('https://itemcatalogpjtbe.onrender.com/signup',{
+
          method:'POST',
          headers:{
             Accept:'application/form-data',
