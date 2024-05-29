@@ -17,7 +17,9 @@
     const Popular = () => {
         const [popularProducts,setPopularProducts] = useState([]);
         useEffect(()=>{
-            fetch('http://localhost:4000/popularinkids')
+            // fetch('http://localhost:4000/popularinkids')
+            fetch('https://itemcatalogpjtbe.onrender.com/popularinkids')
+
             .then((response)=>response.json())
             .then((data)=>setPopularProducts(data));
                                     },[])
