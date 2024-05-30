@@ -18,7 +18,7 @@ const Item = (props) => {
             {/* <Link to={`https://itemcatalogpjtbe.onrender.com/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
 
 
-            <p>{props.catagory}</p>
+            <p>{props.category}</p>
             <p>{props.name}</p>
             <div className='item-prices'>
                 <div className='item-price-new'>

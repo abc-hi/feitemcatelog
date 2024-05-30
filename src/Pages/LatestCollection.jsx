@@ -10,7 +10,7 @@ const LatestCollection = () => {
             <Link to={`http://localhost:5173/LatestCollection/product/${props.id}`}><img src={props.image} alt="" /></Link>
             {/* <Link to={`https://itemcatalogpjtbe.onrender.com/LatestCollection/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
 
-            <p>{props.catagory}</p>
+            <p>{props.category}</p>
             <p>{props.name}</p>
             <div className='item-prices'>
                 <div className='item-price-new'>
