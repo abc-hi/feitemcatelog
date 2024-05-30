@@ -15,9 +15,9 @@ const Item = (props) => {
         <div className='item'>
             {/* <Link to={`http://localhost:5173/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
             {/* <Link to={`http://localhost:3000/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
-            <Link to={`http://localhost:4000/product/${props.id}`}><img src={props.image} alt="" /></Link>
+            {/* <Link to={`http://localhost:4000/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
 
-            {/* <Link to={`https://itemcatalogpjtbe.onrender.com/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
+            <Link to={`https://itemcatalogpjtbe.onrender.com/product/${props.id}`}><img src={props.image} alt="" /></Link>
 
 
             <p>{props.category}</p>
