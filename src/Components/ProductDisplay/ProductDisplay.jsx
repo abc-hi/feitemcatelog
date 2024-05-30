@@ -30,7 +30,7 @@ const{removeFromCart} = useContext(Shopcontext);
                 </div>
             </div>
             <div className="productdisplay-right">
-            <h1>{product.catagory}</h1>
+            <h1>{product.category}</h1>
                 <h1>{product.name}</h1>
                 
 
