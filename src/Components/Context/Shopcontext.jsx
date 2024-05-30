@@ -21,10 +21,14 @@ const ShopcontextProvider =(props)=>{
     
 useEffect(()=>{
 fetch('http://localhost:4000/allproducts')
+// fetch('https://itemcatalogpjtbe.onrender.com/allproducts')
+
 .then((response)=>response.json())
 .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
     fetch('http://localhost:4000/getcart',{
+        // fetch('https://itemcatalogpjtbe.onrender.com/getcart',{
+
         method:'post',
         headers:{
             Accept:'application/form-data',
