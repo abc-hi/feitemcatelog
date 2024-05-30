@@ -14,7 +14,6 @@ import kids_banner from './Components/Assets/banner_kid.jpeg';
 import ShopcontextProvider from './Components/Context/Shopcontext';
 import base from '../apiconfig.js'; // Import API base URL
 
-
 const App = () => {
   return (
     <div>
@@ -28,6 +27,7 @@ const App = () => {
         <Route path='/kids' element={<ShopCatagory banner={kids_banner} category="kids" />}/>
         <Route path='/product' element={<Product/>}>
         <Route path=':productId' element={<Product/>}/>
+
 </Route>
 <Route path='/cart' element={<Cart/>}/>
 <Route path='/login' element={<LoginSignup/>}/>
