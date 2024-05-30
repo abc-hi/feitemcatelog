@@ -20,14 +20,14 @@ const ShopcontextProvider =(props)=>{
     const[cartItems,setCartItems]=useState(getDefaultCart());
     
 useEffect(()=>{
-fetch('http://localhost:4000/allproducts')
-// fetch('https://itemcatalogpjtbe.onrender.com/allproducts')
+// fetch('http://localhost:4000/allproducts')
+fetch('https://itemcatalogpjtbe.onrender.com/allproducts')
 
 .then((response)=>response.json())
 .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
-    fetch('http://localhost:4000/getcart',{
-        // fetch('https://itemcatalogpjtbe.onrender.com/getcart',{
+    // fetch('http://localhost:4000/getcart',{
+        fetch('https://itemcatalogpjtbe.onrender.com/getcart',{
 
         method:'post',
         headers:{
@@ -46,7 +46,9 @@ if(localStorage.getItem('auth-token')){
     const addToCart =(itemId)=>{
        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1})) 
        if(localStorage.getItem('auth-token')){
-        fetch('http://localhost:4000/addtocart',{
+        // fetch('http://localhost:4000/addtocart',{
+            fetch('https://itemcatalogpjtbe.onrender.com/addtocart',{
+
             method:'post',
             headers:{
                 Accept:'application/form-data',
@@ -63,7 +65,9 @@ if(localStorage.getItem('auth-token')){
     const removeFromCart =(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
          if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/removefromcart',{
+            // fetch('http://localhost:4000/removefromcart',{
+                fetch('https://itemcatalogpjtbe.onrender.com/removefromcart',{
+
                 method:'post',
                 headers:{
                     Accept:'application/form-data',
