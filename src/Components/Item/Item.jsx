@@ -10,7 +10,17 @@ import '../Item/Item.css';
 import { Link } from 'react-router-dom';
 
 
+    
+
+
 const Item = (props) => {
+    // Ensure the image URL uses HTTPS
+    const imageUrl = props.image.startsWith('http://') 
+        ? props.image.replace('http://', 'https://') 
+        : props.image;
+
+    // Log the image URL to ensure it's correct
+    console.log(`Image URL: ${imageUrl}`);
     return (
         <div className='item'>
             {/* <Link to={`http://localhost:5173/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
