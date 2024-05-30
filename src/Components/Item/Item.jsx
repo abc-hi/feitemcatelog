@@ -19,7 +19,7 @@ const Item = (props) => {
 
             {/* <Link to={`https://itemcatalogpjtbe.onrender.com/product/${props.id}`}><img src={props.image} alt="" /></Link> */}
             <Link to={`/product/${props.id}`}>
-                <img src={props.image} alt={props.name} />
+                <img src={props.image} alt={props.name} onError={(e) => {e.target.onerror = null; e.target.src="path/to/default_image.png"}} /> 
             </Link>
 
             <p>{props.category}</p>
