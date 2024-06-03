@@ -13,6 +13,8 @@ const ShopCatagory = (props) => {
         <div className='Shop-catagory'> 
         {all_product.map((item,i)=>{
                     return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
+            
+        
                 })}
             <img className='ShopCatagory-banner' src={props.kids_banner} alt="" />
             <div className='shopcatagory-indexSort'>
