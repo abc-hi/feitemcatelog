@@ -20,7 +20,7 @@ const ShopcontextProvider =(props)=>{
     const[cartItems,setCartItems]=useState(getDefaultCart());
     
 useEffect(()=>{
-// fetch('http://localhost:4000/allproducts')
+// fetch('https://localhost:4000/allproducts')
 fetch('https://itemcatalogpjtbe.onrender.com/allproducts')
 
 .then((response)=>response.json())
